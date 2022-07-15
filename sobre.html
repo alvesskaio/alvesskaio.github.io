@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novidades</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/flexbox.css">
+    <link rel="stylesheet" href="styles-linkedin2.css">
+ 
+</head>
+
+<body>
+
+    <header class="cabecalhoPrincipal">
+
+        <div class="container container-content">
+            <h1 class="cabecalhoPrincipal-titulo">Dev <span style="color:white">Help</span></h1>
+
+            <nav class="cabecalhoPrincipal-nav wrapper">
+                <a class="cabecalhoPrincipal-nav-link button three hover-shadow hover-color"
+                    href="home.html"><span>H</span><span>o</span><span>m</span><span>e</span></a></a>
+                <a class="cabecalhoPrincipal-nav-link button three" href="conteudo.html">Conteúdos</a>
+                <a class="cabecalhoPrincipal-nav-link button three" href="novidades.html">Novidades</a>
+                <a class="cabecalhoPrincipal-nav-link button three" href="sobre.html">Sobre</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="home">
+            <br>
+            <h1 class="title">
+                <span class="titulo-centralizado" style="color:#f7b600">Sobre
+            </h1>
+            </h1>
+
+            <div id="organograma" class="organograma"></div>
+
+            <div class="container">
+
+                <div class="conteudo-main">
+                    <h3 class="titulo-centralizado-main">Forças</h3>
+                    <ul>
+                        <li class="home-conteudo">Inclusão</li>
+                        <li class="home-conteudo">Desenvolvimento de software próprio</li>
+                        <li class="home-conteudo">Preço competitivo</li>
+                        <li class="home-conteudo">Fórum de dúvidas</li>
+                        <li class="home-conteudo">Verificação para adquirir o certificado do curso</li>
+                    </ul>
+                </div>
+
+                <div class="conteudo-main">
+                    <h3 class="titulo-centralizado-main">Fraquezas</h3>
+                    <ul>
+                        <li class="home-conteudo">Alta demanda</li>
+                        <li class="home-conteudo">Queda de internet</li>
+                        <li class="home-conteudo">Alto custo</li>
+                        <li class="home-conteudo">Falta de interação presencial</li>
+                        <li class="home-conteudo">Queda do servidor</li>
+                    </ul>
+                </div>
+
+                <div class="conteudo-main">
+                    <h3 class="titulo-centralizado-main">Ameaças</h3>
+                    <ul>
+                        <li class="home-conteudo">Pirataria</li>
+                        <li class="home-conteudo">Ataque cibernético</li>
+                        <li class="home-conteudo">Alta concorrência no mercado</li>
+                        <li class="home-conteudo">Mudança na legislação</li>
+                        <li class="home-conteudo">Violação de dados</li>
+                    </ul>
+                </div>
+
+                <div class="conteudo-main">
+                    <h3 class="titulo-centralizado-main">Oportunidades</h3>
+                    <ul>
+                        <li class="home-conteudo">Possibilidade de venda do modelo da plataforma</li>
+                        <li class="home-conteudo">Alto potencial de crescimento do mercado tecnologia</li>
+                        <li class="home-conteudo">Parcerias com empresas de tecnologia para disponibilização de vagas no
+                            setor</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <br>
+            <br>
+
+            <div class="benchmarking-conteudo">
+                <h3 class="titulo-benchmarking">Estratégias de benchmarking</h3>
+
+                <p class="benchmarking-conteudo-paragrafo">Realização de provas, no qual os candidatos são selecionados
+                    a partir do resultado dessas provas e depois são liberados cursos gratuitos para as pessoas que
+                    tiverem o melhor resultado até essas pessoas serem empregadas, após isso elas começam a pagar os
+                    cursos</p>
+
+                <h3 class="titulo-benchmarking">Como fazer:</h3>
+                <p class="benchmarking-conteudo-paragrafo">A <b>Philips </b>têm o objetivo principal dde reciclar pilhas
+                    e lâmpadas que são descartadas de forma incorreta. A empresa espalhou postos decoleta credenciadas
+                    pelo Brasil. Os postos são responsáveis para coletar e assim, analisar os resíduos. Podendo decidir
+                    se a peça pode ser reutilizada ou descarta</p>
+            </div>
+
+            <br>
+            
+            <div>
+                <img src="img/CIEDS.png" class="imagemFluxo">
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+    google.charts.load('current', {
+        packages: ["orgchart"]
+    });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+            [{
+                v: 'Kaio',
+                f: 'Kaio <div class="wrap"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/kaiosoaresalves/">Presidente</a></p></div>'
+            },
+                '', 'Presidente'
+            ],
+            [{
+                v: 'Jonas',
+                f: 'Jonas <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/jonas-flora-7356991b0/">Vice Presidente</a></p></div>'
+            },
+                'Kaio', 'Vice Presidente'
+            ],
+            [{
+                v: 'Vinicius',
+                f: 'Vinicius <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/viniciusfs32/">Diretor Executivo</a></p></div>'
+            },
+                'Jonas', 'Diretor Executivo'
+            ],
+            [{
+                v: 'Mateus',
+                f: 'Mateus <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/mateus-santana-18a69521a/">Diretor Produção</a></p></div>'
+            },
+                'Vinicius', 'Diretor Produção'
+            ],
+            [{
+                v: 'Rebecca',
+                f: 'Rebecca <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/rebecca-garcia-dias-5090a4221/">Gestora Financeiro</a></p></div>'
+            },
+                'Mateus', 'Gestora Financeiro'
+            ],
+            [{
+                v: 'Phelipe',
+                f: 'Phelipe <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/phelippe-vasquez-29365b197/">Diretor Admnistrativo</a></p></div>'
+            },
+                'Vinicius', 'Diretor Admnistrativo'
+            ],
+            [{
+                v: 'Eduarda',
+                f: 'Eduarda <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/maria-eduarda-correia-5459741b8">Gestora Financeiro</a></p></div>'
+            },
+                'Phelipe', 'Gestora Financeiro'
+            ],
+            [{
+                v: 'Jadson',
+                f: 'Jadson <div class="button three"><p><a class="button three" target="sobre" href="https://www.linkedin.com/in/jadson-lima-780326232">Diretor Logistico</a></p></div>'
+            },
+                'Vinicius', 'Diretor Logistico'
+            ],
+            [{
+                v: 'Larissa',
+                f: 'Larissa <div class="button three"><p><a class="button three" target="sobre" href="">Gestora Logistico</a></p></div>'
+            },
+                'Jadson', 'Gestora Logistico'
+            ],
+            [{
+                v: 'Gabriel',
+                f: 'Gabriel <div class="button three"><p><a class="button three" target="sobre" href="">Diretor Financeiro</a></p></div>'
+            },
+                'Vinicius', 'Diretor Financeiro'
+            ],
+            [{
+                v: 'Beatriz',
+                f: 'Beatriz <div class="button three"><p><a class="button three" target="sobre" href="">Gestora Financeiro</a></p></div>'
+            },
+                'Gabriel', 'Gestora Financeiro'
+            ],
+
+            ['Jonas', 'Kaio', ''],
+            ['Vinicius', 'Jonas', ''],
+            ['Mateus', 'Vinicius', ''],
+            ['Phelipe', 'Vinicius', ''],
+            ['Jadson', 'Vinicius', ''],
+            ['Gabriel', 'Vinicius', ''],
+            ['Rebecca', 'Mateus', ''],
+            ['Eduarda', 'Phelipe', ''],
+            ['Larissa', 'Jadson', ''],
+            ['Beatriz', 'Gabriel', '']
+        ]);
+
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('organograma'));
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        chart.draw(data, {
+            allowHtml: true
+        });
+    }
+</script>
